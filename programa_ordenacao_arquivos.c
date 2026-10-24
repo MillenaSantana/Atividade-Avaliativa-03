@@ -2,10 +2,6 @@
 
 #define MAX 1000
 
-// ==================================================
-// PESSOA 1 - CRIACAO E LEITURA DE ARQUIVOS
-// ==================================================
-
 void criarArquivo() {
     FILE *arquivo = fopen("dados.txt", "w");
 
@@ -61,9 +57,6 @@ int lerArquivo(int vetor[]) {
     return n;
 }
 
-// ==================================================
-// PESSOA 2 - ALGORITMOS DE ORDENACAO
-// ==================================================
 
 void bubbleSort(int vetor[], int n) {
     for (int i = 0; i < n - 1; i++) {
@@ -182,10 +175,6 @@ void quickSort(int vetor[], int baixo, int alto) {
     }
 }
 
-// ==================================================
-// PESSOA 3 - EXIBICAO E GRAVACAO DO RESULTADO
-// ==================================================
-
 void imprimirVetor(int vetor[], int n) {
     for (int i = 0; i < n; i++) {
         printf("%d ", vetor[i]);
@@ -265,9 +254,6 @@ void menuOrdenacao(int vetor[], int n) {
     salvarOrdenado(vetor, n);
 }
 
-// ==================================================
-// PESSOA 4 - ALTERACAO DE VALORES E TESTES
-// ==================================================
 
 void alterarValor() {
     int vetor[MAX];
@@ -342,9 +328,6 @@ void alterarValor() {
     imprimirVetor(confirmacao, quantidade);
 }
 
-// ==================================================
-// MENU PRINCIPAL - INTEGRACAO DO PROGRAMA
-// ==================================================
 
 void limparEntrada() {
     int caractere;
